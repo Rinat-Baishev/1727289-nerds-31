@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Ринат Баишев](https://up.htmlacademy.ru/htmlcss/31/user/1727289).
-* Наставник: [Ольга Тюлихова](https://htmlacademy.ru/profile/id523263).
+* Наставник: [Ольга  Тюлихова](https://htmlacademy.ru/profile/id523263).
 
 ---
 
