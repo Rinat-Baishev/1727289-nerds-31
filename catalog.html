@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Catalog Nёrds</title>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <a href="index.html">
+    <img src="" width="159" height="65" alt="Логотип магазина «Nёrds»">
+    </a>
+    <ul>
+      <li><a href="blank.html">Студия</a></li>
+      <li><a href="blank.html">Клиенты</a></li>
+      <li><a href="catalog.html">Магазин</a></li>
+      <li><a href="blank.html">Контакты</a></li>
+    </ul>
+    <a href="blank.html">Корзина</a>
+  </nav>
+</header>
+
+<main>
+
+  <h1>Магазин готовых шаблонов</h1>
+  <section>
+    <h2>Фильтр товаров</h2>
+    <p>СТОИМОСТЬ:</p>
+      <input type="range" min="0" max="15000" step="100" value="11000" id="filter-range">
+      <label for="filter-range">ОТ 0 ДО 15000</label> 
+    <form method="get" action="https://echo.htmlacademy.ru">
+      <fieldset>
+        <legend>СЕТКА:</legend>
+        <ul>
+          <li>
+            <input type="radio" name="grid-group" value="adaptive" id="filter-adaptive" checked>
+            <label for="filter-adaptive">Адаптивная</label>
+          </li>
+          <li>
+            <input type="radio" name="grid-group" value="fixed" id="filter-fixed">
+            <label for="filter-fixed">Фиксированная</label>
+          </li>
+          <li>
+            <input type="radio" name="grid-group" value="rubber" id="filter-rubber">
+            <label for="filter-rubber">Резиновая</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>ОСОБЕННОСТИ:</legend>
+        <ul>
+          <li>
+            <input type="checkbox" name="product-group"  id="filter-slider" checked>
+            <label for="filter-slider">Слайдер</label>
+          </li>
+          <li>
+            <input type="checkbox" name="product-group"  id="filter-advantages">
+            <label for="filter-advantages">Блок преимуществ</label>
+          </li>
+          <li>
+            <input type="checkbox" name="product-group"  id="filter-news" checked>
+            <label for="filter-news">Новости</label>
+          </li>
+          <li>
+            <input type="checkbox" name="product-group"  id="filter-gallery">
+            <label for="filter-gallery">Галерея</label>
+          </li>
+          <li>
+            <input type="checkbox" name="product-group"  id="filter-basket">
+            <label for="filter-basket">Корзина</label>
+          </li>
+        </ul>
+      </fieldset>
+      <button type="submit">Показать</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Список готовых шаблонов</h2>
+    <p>СОРТИРОВАТЬ:</p>
+    <ul>
+      <li>По ЦЕНЕ</li>
+      <li>ПО ТИПУ</li>
+      <li>ПО НАЗВАНИЮ</li>
+    </ul>
+    <ul>
+      <li>
+        <a href="blank.html">
+          <h3>«SEDONA»</h3>
+            <pre>
+              Информационный сайт
+                  для туристов
+            </pre>
+            <img src="" width="359" height="578" alt="Шаблон сайта «Sedona»">
+        </a>
+        <p>
+          <button type="button">9 900 ₽</button>
+        </p>
+      </li>
+      <li>
+        <a href="blank.html">
+          <h3>«PINK APP»</h3>
+            <pre>
+              Продуктовый лендинг
+           приложения для IOS и Android
+            </pre>
+            <img src="" width="358" height="578" alt="Шаблон сайта «Pink App»">
+        </a>
+        <p>
+          <button type="button">9 900 ₽</button>
+        </p>
+      </li>
+      <li>
+        <a href="blank.html">
+          <h3>BARBERSHOP</h3>
+            <pre>
+              Сайт салона красоты.
+                Для мужчин, да.
+            </pre>
+            <img src="" width="358" height="578" alt="Шаблон сайта Барбершопа «Бородинский»">
+        </a>
+        <p>
+          <button type="button">9 900 ₽</button>
+        </p>
+      </li>
+      <li>
+        <a href="blank.html">
+          <h3>«MISHKA»</h3>
+            <pre>
+              Интернет-магазин
+               вязаных игрушек
+            </pre>
+            <img src="img/product-4.jpg" width="359" height="578" alt="Шаблон сайта «Mishka»">
+        </a>
+        <p>
+          <button type="button">9 900 ₽</button>
+        </p>
+      </li>
+      <li>
+        <a href="blank.html">
+          <h3>«A PLUS»</h3>
+            <pre>
+              Лендинг курсов повышения
+                   квалификации
+            </pre>
+            <img src="img/product-5.jpg" width="359" height="578" alt="Шаблон сайта «A Plus»">
+        </a>
+        <p>
+          <button type="button">9 900 ₽</button>
+        </p>
+      </li>
+      <li>
+        <a href="blank.html">
+          <h3>«КВАСТ»</h3>
+            <pre>
+              Промо-сайт производителя
+                 крафтового кваса
+            </pre>
+            <img src="img/product-6.jpg" width="359" height="578" alt="Шаблон сайта «Кваст»">
+        </a>
+        <p>
+          <button type="button">9 900 ₽</button>
+        </p>
+        <p>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a>1</a>
+      </li>
+      <li>
+        <a href="#">2</a>
+      </li>
+      <li>
+        <a href="#">3</a>
+      </li>
+      <li>
+        <a href="#">Следующая</a>
+      </li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <section>
+    <h2>Как нас найти</h2>
+    <p>
+      NЁRDS DESIGN STUDIO
+    </p>
+    <p>
+      наб. Реки Карповки,<br>
+      5 лит П, Санкт-Петербург
+      <!-- Здесь будет карта -->
+    </p>
+    <p><a href="tel:+78005558628">+7 (800) 555-86-28</a></p>
+    <button type="button">НАПИШИТЕ НАМ</button>
+  </section>
+
+  <section>
+  <h2>Давайте дружить!</h2>
+  <ul>
+    <li>
+      <a href="#">Вконтакте</a>
+    </li>
+    <li>
+      <a href="#">Фейсбук</a>
+    </li>
+    <li>
+      <a href="#">Инстаграм</a>
+    </li>
+  </ul>
+  <p>Давайте дружить, это выгодно!</p>
+  <p>Скидка 10% для друзей из социальных сетей.</p>
+</section>
+</footer>
+
+<section>
+  <h2>Напишите нам</h2>
+  <button type="button">Закрыть</button>
+  <form action="https://echo.htmlacademy.ru" method="post">
+    <p>
+      <label for="appointment-name">Ваше имя:</label>
+      <input id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
+    </p>
+    <p>
+      <label for="appointment-email">Ваш email:</label>
+      <input id="appointment-email" type="email" name="email" placeholder="email@example.com">
+    </p>
+    <p>
+      <label for="appointment-text">Текст письма:</label>
+      <input id="appointment-text" type="text" name="letter" placeholder="В свободной форме">
+    </p>
+    <button type="submit">Отправить</button>
+  </form>
+</section>
+
+</body>
+</html>
