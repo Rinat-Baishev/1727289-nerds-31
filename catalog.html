@@ -28,9 +28,20 @@
   <section>
     <h2>Фильтр товаров</h2>
     <p>СТОИМОСТЬ:</p>
-      <input type="range" min="0" max="15000" step="100" value="11000" id="filter-range">
-      <label for="filter-range">ОТ 0 ДО 15000</label> 
     <form method="get" action="https://echo.htmlacademy.ru">
+      <ul>
+        <li>
+          <input type="range" name="price-group" min="0" max="15000" step="100" value="11000" id="filter-range">
+        </li>
+        <li>
+          <label for="price-field-min">ОТ</label> 
+          <input type="text" name="price-group" value="0" id="price-field-min">
+        </li>
+        <li>
+          <label for="price-field-max">ДО</label>
+          <input type="text" name="price-group" value="15000" id="price-field-max">
+        </li>
+    </ul>
       <fieldset>
         <legend>СЕТКА:</legend>
         <ul>
@@ -52,23 +63,23 @@
         <legend>ОСОБЕННОСТИ:</legend>
         <ul>
           <li>
-            <input type="checkbox" name="product-group"  id="filter-slider" checked>
+            <input type="checkbox" name="product-group" value="slider" id="filter-slider" checked>
             <label for="filter-slider">Слайдер</label>
           </li>
           <li>
-            <input type="checkbox" name="product-group"  id="filter-advantages">
+            <input type="checkbox" name="product-group" value="advantages" id="filter-advantages">
             <label for="filter-advantages">Блок преимуществ</label>
           </li>
           <li>
-            <input type="checkbox" name="product-group"  id="filter-news" checked>
+            <input type="checkbox" name="product-group" value="news" id="filter-news" checked>
             <label for="filter-news">Новости</label>
           </li>
           <li>
-            <input type="checkbox" name="product-group"  id="filter-gallery">
+            <input type="checkbox" name="product-group" value="gallery" id="filter-gallery">
             <label for="filter-gallery">Галерея</label>
           </li>
           <li>
-            <input type="checkbox" name="product-group"  id="filter-basket">
+            <input type="checkbox" name="product-group" value="basket" id="filter-basket">
             <label for="filter-basket">Корзина</label>
           </li>
         </ul>
@@ -81,89 +92,72 @@
     <h2>Список готовых шаблонов</h2>
     <p>СОРТИРОВАТЬ:</p>
     <ul>
-      <li>По ЦЕНЕ</li>
-      <li>ПО ТИПУ</li>
-      <li>ПО НАЗВАНИЮ</li>
+      <li><a href="#">ПО ЦЕНЕ</a></li>
+      <li><a href="#">ПО ТИПУ</a></li>
+      <li><a href="#">ПО НАЗВАНИЮ</a></li>
+      <li><a href="#">По возрастанию</a></li>
+      <li><a href="#">По убыванию</a></li>
     </ul>
     <ul>
       <li>
-        <a href="blank.html">
-          <h3>«SEDONA»</h3>
-            <pre>
-              Информационный сайт
-                  для туристов
-            </pre>
-            <img src="" width="359" height="578" alt="Шаблон сайта «Sedona»">
+        <a href="#">
+          <h3>SEDONA</h3>
         </a>
+        <p>Информационный сайт для туристов</p>
+        <img src="" width="359" height="578" alt="Шаблон сайта «Sedona»">
         <p>
-          <button type="button">9 900 ₽</button>
+          <a href="#">9 900 ₽</a>
         </p>
       </li>
       <li>
-        <a href="blank.html">
-          <h3>«PINK APP»</h3>
-            <pre>
-              Продуктовый лендинг
-           приложения для IOS и Android
-            </pre>
-            <img src="" width="358" height="578" alt="Шаблон сайта «Pink App»">
+        <a href="#">
+          <h3>PINK APP</h3>
         </a>
+        <p>Продуктовый лендинг приложения для IOS и Android</p>
+          <img src="" width="358" height="578" alt="Шаблон сайта «Pink App»">
         <p>
-          <button type="button">9 900 ₽</button>
+          <a href="#">9 900 ₽</a>
         </p>
       </li>
       <li>
-        <a href="blank.html">
+        <a href="#">
           <h3>BARBERSHOP</h3>
-            <pre>
-              Сайт салона красоты.
-                Для мужчин, да.
-            </pre>
-            <img src="" width="358" height="578" alt="Шаблон сайта Барбершопа «Бородинский»">
         </a>
+        <p>Сайт салона красоты. Для мужчин, да.</p>
+        <img src="" width="358" height="578" alt="Шаблон сайта Барбершопа «Бородинский»">
         <p>
-          <button type="button">9 900 ₽</button>
+          <a href="#">9 900 ₽</a>
         </p>
       </li>
       <li>
-        <a href="blank.html">
-          <h3>«MISHKA»</h3>
-            <pre>
-              Интернет-магазин
-               вязаных игрушек
-            </pre>
-            <img src="img/product-4.jpg" width="359" height="578" alt="Шаблон сайта «Mishka»">
+        <a href="#">
+          <h3>MISHKA</h3>
         </a>
+        <p>Интернет-магазин вязаных игрушек</p>
+          <img src="" width="359" height="578" alt="Шаблон сайта «Mishka»">
         <p>
-          <button type="button">9 900 ₽</button>
+          <a href="#">9 900 ₽</a>
         </p>
       </li>
       <li>
-        <a href="blank.html">
-          <h3>«A PLUS»</h3>
-            <pre>
-              Лендинг курсов повышения
-                   квалификации
-            </pre>
-            <img src="img/product-5.jpg" width="359" height="578" alt="Шаблон сайта «A Plus»">
+        <a href="#">
+          <h3>A PLUS</h3>
         </a>
+        <p>Лендинг курсов повышения квалификации</p>
+          <img src="" width="359" height="578" alt="Шаблон сайта «A Plus»">
         <p>
-          <button type="button">9 900 ₽</button>
+          <a href="#">9 900 ₽</a>
         </p>
       </li>
       <li>
-        <a href="blank.html">
-          <h3>«КВАСТ»</h3>
-            <pre>
-              Промо-сайт производителя
-                 крафтового кваса
-            </pre>
-            <img src="img/product-6.jpg" width="359" height="578" alt="Шаблон сайта «Кваст»">
+        <a href="#">
+          <h3>КВАСТ</h3>
         </a>
+        <p>Промо-сайт производителя крафтового кваса</p>
+          <img src="" width="359" height="578" alt="Шаблон сайта «Кваст»">
         <p>
-          <button type="button">9 900 ₽</button>
+          <a href="#">9 900 ₽</a>
         </p>
-        <p>
       </li>
     </ul>
     <ul>
@@ -187,34 +181,34 @@
 <footer>
   <section>
     <h2>Как нас найти</h2>
+    <p>NЁRDS DESIGN STUDIO</p>
     <p>
-      NЁRDS DESIGN STUDIO
-    </p>
-    <p>
-      наб. Реки Карповки,<br>
+      наб. Реки Карповки,
       5 лит П, Санкт-Петербург
       <!-- Здесь будет карта -->
     </p>
-    <p><a href="tel:+78005558628">+7 (800) 555-86-28</a></p>
-    <button type="button">НАПИШИТЕ НАМ</button>
+    <p>
+      <a href="tel:+78005558628">+7 (800) 555-86-28</a>
+    </p>
+    <a href="#">НАПИШИТЕ НАМ</a>
   </section>
 
   <section>
-  <h2>Давайте дружить!</h2>
-  <ul>
-    <li>
-      <a href="#">Вконтакте</a>
-    </li>
-    <li>
-      <a href="#">Фейсбук</a>
-    </li>
-    <li>
-      <a href="#">Инстаграм</a>
-    </li>
-  </ul>
-  <p>Давайте дружить, это выгодно!</p>
-  <p>Скидка 10% для друзей из социальных сетей.</p>
-</section>
+    <h2>Давайте дружить!</h2>
+    <ul>
+      <li>
+        <a href="#">Вконтакте</a>
+      </li>
+      <li>
+        <a href="#">Фейсбук</a>
+      </li>
+      <li>
+        <a href="#">Инстаграм</a>
+      </li>
+    </ul>
+    <p>Давайте дружить, это выгодно!</p>
+    <p>Скидка 10% для друзей из социальных сетей.</p>
+  </section>
 </footer>
 
 <section>
@@ -230,8 +224,7 @@
       <input id="appointment-email" type="email" name="email" placeholder="email@example.com">
     </p>
     <p>
-      <label for="appointment-text">Текст письма:</label>
-      <input id="appointment-text" type="text" name="letter" placeholder="В свободной форме">
+      <textarea name="comment" id="comment-field" rows="5">В свободной форме</textarea>
     </p>
     <button type="submit">Отправить</button>
   </form>
