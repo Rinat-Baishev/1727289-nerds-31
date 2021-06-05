@@ -1,0 +1,482 @@
+/* Variables */
+
+:root {
+  --basic-black: #000000;
+  --basic-white: #FFFFFF;
+  --basic-black-light: #283136;
+  --basic-white-light: #EEEEEE;
+  --basic-red: #FB565A;
+  --basic-steel: #D7DCDE;
+  --basic-gray-dark-deep: #444444;
+  --basic-gray: #A6A6A6;
+  --basic-gray-light: #E1E1E1;
+  --basic-green: #00CA74;
+  --basic-yellow: #EFC849;
+  --basic-gray-dark: #666666;
+  --basic-steel: #C1C1C1;
+
+  --special-red:#E74246;
+  --special-red-dark:#D7373B;
+  --special-green:#00BC6C;
+  --special-green-dark:#00AA62;
+  --special-yellow:#EAB534;
+  --special-yellow-dark:#E5A722;
+  --special-steel: #B4B9BB;
+  --special-gray:#DBDBDB;
+  --special-gray-light:#DFDFDF;
+}
+
+/* Global */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-black-light);
+  background-color: var(--basic-white);
+}
+
+a {
+  text-decoration: none;
+}
+
+.hat {
+  background-color: var(--basic-white-light);
+}
+
+/* Main navigation */
+
+.main-navigation {
+  line-height: 30px;
+  font-weight: 500;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation-current a:not([href]) {
+  background-color: var(--basic-white);
+}
+
+/* User navigation */
+
+.main-header-logo:hover {
+  opacity: 0.7;
+}
+.main-header-logo:active {
+  opacity: 0.3;
+}
+
+.site-navigation a,
+.user-navigation a {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover,
+.user-navigation a:hover {
+  color: var(--basic-red);
+}
+.site-navigation a:focus,
+.user-navigation a:focus {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+/* Features */
+
+.features-list {
+  list-style: none;
+}
+
+.feature-item h3 {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  color: var(--basic-black);
+}
+
+/* Services */
+
+.services-list {
+  list-style: none;
+}
+
+.service-item h3 {
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--basic-black);
+}
+
+.service-content-laptop {
+  background-color: rgba(251, 86, 90, 0.3);
+}
+
+.service-content-iphones {
+  background-color: rgba(0, 202, 116, 0.3);
+}
+
+.service-content-slides {
+  background-color: rgba(239, 200, 73, 0.3);
+}
+
+/* About-us */
+
+.about-us-list {
+  list-style: none;
+}
+
+.about-us-description {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color: var(--basic-black);
+}
+
+.about-us-works {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Advantages */
+
+.advantage-history {
+  color: var(--basic-black);
+  font-weight: 700;
+}
+
+.advantage-fact-figure {
+  font-size: 45px;
+  line-height: 64px;
+  font-weight: 700;
+  color: var(--basic-black);
+}
+
+.advantage-fact-description {
+  line-height: 18px;
+}
+
+/* Partners*/
+
+.partners-list {
+  list-style: none;
+}
+
+.partner-item a {
+  opacity: 0.2;
+}
+
+.partner-item a:hover {
+  opacity: 1;
+}
+.partner-item a:focus {
+  opacity: 0.1;
+}
+
+/* Button */
+
+.button {
+  line-height: 18px;
+  font-weight: 500;
+  text-align: center;
+  color: var(--basic-white);
+  text-transform: uppercase;
+  background-color: var(--basic-red);
+  border-radius: 3px;
+  border: none;
+}
+
+.button:hover {
+  background-color: var(--special-red);
+}
+.button:focus {
+  background-color: rgba(215, 55, 59, 1);
+  color: rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.button-order-app {
+  background-color: var(--basic-green);
+}
+
+.button-order-app:hover {
+  background-color: var(--special-green);
+}
+.button-order-app:focus {
+  background-color: rgba(0, 170, 98, 1);
+  color: rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.button-order-slides {
+  background-color: var(--basic-yellow);
+}
+
+.button-order-slides:hover {
+  background-color: var(--special-yellow);
+}
+.button-order-slides:focus {
+  background-color: rgba(229, 167, 34, 1);
+  color: rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+/*Shop*/
+
+.page-title {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  color: var(--basic-black);
+  text-align: center;
+}
+
+/* Filters */
+
+.filter ul {
+  list-style: none;
+}
+
+.filter-name,
+.catalog-item h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.price-field {
+  text-transform: uppercase;
+  line-height: 22px;
+}
+
+.filter-list-radio,
+.filter-list-checkbox {
+  list-style: none;
+  line-height: 20px;
+}
+
+.price-field input,
+.filter-price-range {
+  border-radius: 3px;
+  background-color: var(--basic-white-light);
+}
+
+.radio.disabled,
+.checkbox.disabled {
+  opacity: 0.3;
+}
+
+.filter-button {
+  color: var(--basic-black);
+  background-color: var(--basic-white-light);
+}
+.filter-button:hover {
+  background-color: var(--special-gray-light);
+}
+.filter-button:focus {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(213, 213, 213, 1);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.filter-sort {
+  list-style: none;
+}
+
+.filter-sort a {
+  list-style: none;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.filter-sort a:hover {
+  opacity: 0.6;
+}
+.filter-sort a:focus {
+  opacity: 1;
+}
+
+/* Catalog */
+
+.catalog-list {
+  list-style: none;
+}
+
+h3 a{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--basic-black);
+}
+
+h3 a:hover {
+  color: var(--basic-red);
+}
+h3 a:focus {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.catalog-category {
+  color: var(--basic-gray-dark);
+  line-height: 18px;
+}
+
+.catalog-item-information{
+  background-color: var(--basic-white-light);
+}
+
+/* Pagination */
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item a {
+  font-weight: 500;
+  line-height: 18px;
+  color: var(--basic-black);
+  text-align: center;
+  background-color: var(--basic-white-light);
+  border-radius: 3px;
+}
+
+.pagination-item a:hover {
+  color: var(--basic-black);
+  background-color: var(--special-gray-light);
+}
+.pagination-item a:focus {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(213, 213, 213, 1);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.pagination-item-current a,
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+  background-color: var(--basic-white);
+  border: 3px solid var(--special-gray);
+}
+
+/* Main footer */
+
+/* Footer-contacts */
+
+.full-name-Nerds {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+.contact-address,
+.contact-phone {
+  line-height: 18px;
+  color: var(--basic-gray-dark);
+}
+
+/* Social button */
+
+.social-list {
+  list-style: none;
+}
+
+.friendship-invitation {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+  color: var(--basic-black);
+}
+
+.friends-discount {
+  line-height: 22px;
+  color: var(--basic-gray-dark-deep);
+}
+
+.social-button {
+  color: var(--basic-white);
+  background: linear-gradient(0deg, #E1E1E1, #E1E1E1), #FFFFFF;
+}
+
+.social-button:hover {
+  background-color: var(---special-red);
+  background: linear-gradient(0deg, #E74246, #E74246), #FFFFFF;
+}
+.social-button:focus {
+  background-color: var(--special-red-dark);
+  background: linear-gradient(0deg, #D7373B, #D7373B), #FFFFFF;
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+/* Modal */
+
+/* Appointment */
+
+.modal-appointment {
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.modal-appointment h2 {
+  font-size: 45px;
+  line-height: 53px;
+  color: var(--basic-black);
+  font-weight: 700;
+}
+
+.appointment-item {
+  line-height: 18px;
+  color: var(--basic-black);
+  font-weight: 700;
+}
+
+.appointment-close {
+  background-color: transparent;
+  border: none;
+  opacity: 0.3;
+}
+
+.appointment-close:hover {
+  opacity: 1;
+}
+.appointment-close:focus {
+  opacity: 0.1;
+}
+
+.appointment-item input,
+.appointment-item textarea {
+  line-height: 18px;
+  border-radius: 3px;
+  border: 2px solid #D7DCDE;
+  color: rgba(68, 68, 68, 0.5);
+}
+
+.appointment-item input:hover,
+.appointment-item textarea:hover {
+  border: 2px solid #B4B9BB;
+  color: rgba(68, 68, 68, 0.5);
+}
+.appointment-item input:focus,
+.appointment-item textarea:focus {
+  border: 2px solid #000000;
+  color: rgba(68, 68, 68, 1);
+}
+
+/*Не получается сделать (искал в интернете причину, но решения не нашёл)*/
+.appointment-item input:invalid {
+  border: 2px solid #E74246;
+  color: rgba(231, 66, 70, 1);
+}
