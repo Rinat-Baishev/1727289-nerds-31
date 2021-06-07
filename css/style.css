@@ -31,7 +31,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;;
+  font-family: 'Roboto', 'Arial', sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -94,11 +94,16 @@ a {
   list-style: none;
 }
 
-.feature-item h3 {
+.slider-list-item h3 {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
   color: var(--basic-black);
+}
+
+.slider-list,
+.slider-pagination{
+  list-style: none;
 }
 
 /* Services */
@@ -115,15 +120,15 @@ a {
   color: var(--basic-black);
 }
 
-.service-content-laptop {
+.service-item .service-content {
   background-color: rgba(251, 86, 90, 0.3);
 }
 
-.service-content-iphones {
+.service-item:nth-child(2) .service-content {
   background-color: rgba(0, 202, 116, 0.3);
 }
 
-.service-content-slides {
+.service-item:last-child .service-content {
   background-color: rgba(239, 200, 73, 0.3);
 }
 
@@ -157,6 +162,11 @@ a {
   line-height: 64px;
   font-weight: 700;
   color: var(--basic-black);
+}
+
+.advantage-fact-figure sup {
+  font-size: 26px;
+  line-height: 40px;
 }
 
 .advantage-fact-description {
@@ -202,27 +212,27 @@ a {
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
-.button-order-app {
+.service-item:nth-child(2) .button {
   background-color: var(--basic-green);
 }
 
-.button-order-app:hover {
+.service-item:nth-child(2) .button:hover {
   background-color: var(--special-green);
 }
-.button-order-app:focus {
+.service-item:nth-child(2) .button:focus {
   background-color: rgba(0, 170, 98, 1);
   color: rgba(255, 255, 255, 0.3);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
-.button-order-slides {
+.service-item:last-child .button {
   background-color: var(--basic-yellow);
 }
 
-.button-order-slides:hover {
+.service-item:last-child .button:hover {
   background-color: var(--special-yellow);
 }
-.button-order-slides:focus {
+.service-item:last-child .button:focus {
   background-color: rgba(229, 167, 34, 1);
   color: rgba(255, 255, 255, 0.3);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
@@ -253,31 +263,56 @@ a {
   color: var(--basic-black);
 }
 
-.price-field {
+.filter-price-range {
+  background-color: var(--basic-white-light);
+  border-radius: 3px;
+}
+
+.range-controls .scale {
+  background-color: var(--basic-steel);
+}
+
+.range-controls .bar {
+  background-color: var(--basic-green);
+}
+
+.range-toggle {
+  background-color: var(--basic-white);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.15);
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.price-field label {
   text-transform: uppercase;
   line-height: 22px;
 }
 
 .filter-list-radio,
-.filter-list-checkbox {
-  list-style: none;
+.filter-list-checkbox label{
   line-height: 20px;
 }
 
-.price-field input,
-.filter-price-range {
+.price-field input {
   border-radius: 3px;
   background-color: var(--basic-white-light);
 }
 
-.radio.disabled,
-.checkbox.disabled {
+.radio:disabled,
+.checkbox:disabled {
   opacity: 0.3;
 }
 
 .filter-button {
   color: var(--basic-black);
   background-color: var(--basic-white-light);
+
 }
 .filter-button:hover {
   background-color: var(--special-gray-light);
@@ -314,17 +349,17 @@ a {
   list-style: none;
 }
 
-h3 a{
+.catalog-item-title a{
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
   color: var(--basic-black);
 }
 
-h3 a:hover {
+.catalog-item-title a:hover {
   color: var(--basic-red);
 }
-h3 a:focus {
+.catalog-item-title a:focus {
   color: var(--basic-black);
   opacity: 0.3;
 }
@@ -437,7 +472,7 @@ h3 a:focus {
   font-weight: 700;
 }
 
-.appointment-item {
+.appointment-item label {
   line-height: 18px;
   color: var(--basic-black);
   font-weight: 700;
