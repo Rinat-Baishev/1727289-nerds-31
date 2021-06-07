@@ -120,15 +120,15 @@ a {
   color: var(--basic-black);
 }
 
-.service-item .service-content {
+.service-content{
   background-color: rgba(251, 86, 90, 0.3);
 }
 
-.service-item:nth-child(2) .service-content {
+.service-content-green {
   background-color: rgba(0, 202, 116, 0.3);
 }
 
-.service-item:last-child .service-content {
+.service-content-yellow {
   background-color: rgba(239, 200, 73, 0.3);
 }
 
@@ -212,27 +212,27 @@ a {
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
-.service-item:nth-child(2) .button {
+.button-green {
   background-color: var(--basic-green);
 }
 
-.service-item:nth-child(2) .button:hover {
+.button-green:hover {
   background-color: var(--special-green);
 }
-.service-item:nth-child(2) .button:focus {
+.button-green:focus {
   background-color: rgba(0, 170, 98, 1);
   color: rgba(255, 255, 255, 0.3);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
-.service-item:last-child .button {
+.button-yellow {
   background-color: var(--basic-yellow);
 }
 
-.service-item:last-child .button:hover {
+.button-yellow:hover {
   background-color: var(--special-yellow);
 }
-.service-item:last-child .button:focus {
+.button-yellow:focus {
   background-color: rgba(229, 167, 34, 1);
   color: rgba(255, 255, 255, 0.3);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
