@@ -26,7 +26,7 @@
   --special-gray-light:#DFDFDF;
 }
 
-/* Global */ /**/
+/* Global */
 
 body {
   min-width: 1200px;
@@ -47,6 +47,19 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* Hat */
@@ -82,6 +95,8 @@ a {
 
 .site-navigation {
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   outline: 5px solid rgba(0, 255, 255, 0.3);
@@ -118,6 +133,8 @@ a {
 .site-navigation a,
 .user-navigation a {
   color: var(--basic-black);
+  display: block;
+  padding: 26px 45px 9px;
 }
 
 .site-navigation a:hover,
@@ -128,6 +145,23 @@ a {
 .user-navigation a:focus {
   color: var(--basic-black);
   opacity: 0.3;
+}
+
+/* Cart link */
+
+.cart-link::before {
+  content: "";
+  position: absolute;
+/*  top: 33px; */
+  width: 15px;
+  height: 15px;
+  background-image: url("img\cart-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.user-navigation .cart-link {
+  position: relative;
 }
 
 /* Container */
@@ -246,7 +280,7 @@ a {
   background-color: rgba(239, 200, 73, 0.3);
 }
 
-/* About-us Part */
+/* About us part */
 
 .about-us-part {
   list-style: none;
@@ -259,7 +293,7 @@ a {
   outline-offset: -5px;
 }
 
-/* About-us */
+/* About us */
 
 .about-us {
   outline: 5px solid rgba(0, 255, 255, 0.7);
@@ -342,7 +376,7 @@ a {
   margin: 0 10px;
 }
 
-/* Partners*/
+/* Partners */
 
 .partners {
   outline: 5px solid rgba(255, 0, 0, 0.7);
@@ -696,7 +730,7 @@ a {
   outline-offset: -5px;
 }
 
-/* Footer-contacts */
+/* Footer contacts */
 
 .map {
   width: 100%;
