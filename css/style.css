@@ -92,8 +92,6 @@ a {
 
 .main-header {
   margin-top: 49px;
- outline: 5px solid rgba(255, 0, 0, 0.7);
-  outline-offset: -5px;
 }
 
 /* Main navigation */
@@ -112,8 +110,6 @@ a {
 .main-header-logo {
   width: 160px;
   height: 65px;
-  outline: 5px solid rgba(0, 255, 0, 0.7);
-  outline-offset: -5px;
 }
 
 .main-header-logo:hover {
@@ -132,8 +128,6 @@ a {
   justify-content: center;
   margin: 0;
   padding: 0;
-  outline: 5px solid rgba(0, 255, 255, 0.3);
-  outline-offset: -5px;
 }
 
 .site-navigation-current {
@@ -172,8 +166,6 @@ a {
 
 .user-navigation {
   margin-left: auto;
-  outline: 5px solid rgba(255, 0, 255, 0.3);
-  outline-offset: -5px;
 }
 
 .user-navigation a {
@@ -213,11 +205,6 @@ a {
 }
 
 /* Features SLider */
-
-.features {
-  outline: 5px solid rgba(255, 0, 0, 0.7);
-  outline-offset: -5px;
-}
 
 .slider {
   position: relative;
@@ -269,8 +256,8 @@ a {
 }
 
 .slider-content {
-  outline: 5px solid rgba(0, 255, 255 , 0.3);
-  outline-offset: -5px;
+/*  outline: 5px solid rgba(0, 255, 255 , 0.3);
+  outline-offset: -5px; */
 }
 
 .slide:first-child {
@@ -341,8 +328,6 @@ a {
 
 .services {
   position: relative;
-  outline: 5px solid rgba(255, 0, 0, 0.7);
-  outline-offset: -5px;
 }
 
 .services-list {
@@ -360,8 +345,7 @@ a {
   display: flex;
   flex-direction: column;
   height: 347px;
-  outline: 5px solid rgba(0, 255, 255, 0.7);
-  outline-offset: -5px;
+
 }
 
 .service-item:nth-child(3) {
@@ -414,15 +398,13 @@ a {
   margin-bottom: 0;
   padding-bottom: 73px;
   border-bottom: 2px solid var(--basic-white-light);
-  outline: 5px solid rgba(255, 0, 0, 0.7);
-  outline-offset: -5px;
 }
 
 /* About us */
 
 .about-us {
-  outline: 5px solid rgba(0, 255, 255, 0.7);
-  outline-offset: -5px;
+/*  outline: 5px solid rgba(0, 255, 255, 0.7);
+  outline-offset: -5px; */
 }
 
 .about-us-title {
@@ -475,8 +457,8 @@ a {
 /* Advantages */
 
 .advantages {
-  outline: 5px solid rgba(0, 255, 255, 0.7);
-  outline-offset: -5px;
+/*  outline: 5px solid rgba(0, 255, 255, 0.7);
+  outline-offset: -5px; */
 }
 
 .coloured-logo {
@@ -526,8 +508,6 @@ a {
   position: relative;
   padding: 46px 0 44px 0;
   border-bottom: 2px solid var(--basic-white-light);
-  outline: 5px solid rgba(255, 0, 0, 0.7);
-  outline-offset: -5px;
 }
 
 .partners-list {
@@ -541,8 +521,6 @@ a {
 
 .partner-item {
   position: relative;
-  outline: 5px solid rgba(0, 255, 255, 0.7);
-  outline-offset: -5px;
 }
 
 .partner-item:first-child {
@@ -666,16 +644,12 @@ a {
   font-size: 55px;
   line-height: 55px;
   color: var(--basic-black);
-  outline: 5px solid rgba(0, 0, 255, 0.7);
-  outline-offset: -5px;
 }
 
 .page-catalog {
   display: grid;
   grid-template-columns: 260px 1fr;
   align-content: start;
-  outline: 5px solid rgba(255, 0, 0, 0.7);
-  outline-offset: -5px;
 }
 
 .page-catalog {
@@ -683,11 +657,6 @@ a {
 }
 
 /* Filters */
-
-.filters {
-  outline: 5px solid rgba(255, 0, 255, 0.7);
-  outline-offset: -5px;
-}
 
 .filter legend,
 .filter-sort,
@@ -1005,8 +974,6 @@ a {
 
 .catalog {
   margin-left: 141px;
-  outline: 5px solid rgba(0, 255, 255, 0.7);
-  outline-offset: -5px;
 }
 
 .catalog-list {
@@ -1170,8 +1137,6 @@ a {
 .main-footer {
   margin-top: 80px;
   margin-bottom: 68px;
-  outline: 5px solid rgba(255, 0, 0, 0.7);
-  outline-offset: -5px;
 }
 
 /* Map */
@@ -1183,7 +1148,8 @@ a {
   margin-bottom: 68px;
   background-image: url(../img/map.png);
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 50%;
+  background-size: cover;
 }
 
 .map iframe {
@@ -1201,8 +1167,6 @@ a {
   padding: 49px 50px 47px;
   background-color: var(--basic-white);
   box-sizing: border-box;
-  outline: 5px solid rgba(0, 255, 0, 0.7);
-  outline-offset: -5px;
 }
 
 .full-name-Nerds {
@@ -1232,16 +1196,9 @@ a {
   display: grid;
   grid-template-columns: 260px 1fr;
   column-gap: 140px;
-  outline: 5px solid rgba(0, 255, 255, 0.7);
-  outline-offset: -5px;
 }
 
 /* Social button */
-
-.footer-social {
-  outline: 5px solid rgba(0, 255, 0, 0.7);
-  outline-offset: -5px;
-}
 
 .social-list {
   list-style: none;
@@ -1284,8 +1241,6 @@ a {
 .social-invitation {
   justify-self: start;
   margin: 0;
-  outline: 5px solid rgba(0, 255, 0, 0.7);
-  outline-offset: -5px;
 }
 
 .friendship-invitation {
@@ -1304,6 +1259,10 @@ a {
 }
 
 /* Modal connection */
+
+.modal-show {
+  display: block;
+}
 
 .modal-connection {
   display: none;
