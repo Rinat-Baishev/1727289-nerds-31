@@ -166,6 +166,7 @@ a {
 .site-navigation-current a:active {
   cursor: default;
   color: var(--basic-black);
+  opacity: 1;
 }
 
 .site-navigation-current::after {
@@ -1275,9 +1276,10 @@ a {
   justify-content: space-between;
 }
 
-/*.connection-form input:invalid {
+.connection-form input-invalid {
   border: 2px solid #E74246;
-}*/
+  color: var(--basic-red);
+}
 
 .connection-item {
   width: 360px;
