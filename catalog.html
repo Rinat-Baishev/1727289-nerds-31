@@ -7,7 +7,7 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap&subset=cyrillic,latin">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicon/faviconicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicon/favicon.png">
@@ -134,12 +134,12 @@
           <li><a href="#">ПО НАЗВАНИЮ</a></li>
         </ul>
         <div class="sort-icons">
-          <a class="price-icon price-icon-current" visually-hidden="По возрастанию" href="#">
+          <a class="price-icon price-icon-current" aria-label="По возрастанию" href="#">
             <svg width="11" height="10" viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
               <path d="M5.5 10L0 0H11" />
             </svg>
           </a>
-          <a class="price-icon" visually-hidden="По убыванию" href="#">
+          <a class="price-icon" aria-label="По убыванию" href="#">
             <svg width="11" height="10" viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
               <path d="M5.5 0L0 10H11L5.5 0Z" />
             </svg>
@@ -374,11 +374,11 @@
     <form class="connection-form" action="https://echo.htmlacademy.ru" method="post">
       <p class="connection-item">
         <label for="connection-name">Ваше имя:</label>
-        <input id="connection-name" type="text" name="user-name" required placeholder="Имя Фамилия">
+        <input class="login-name" id="connection-name" type="text" name="user-name" placeholder="Имя Фамилия">
       </p>
       <p class="connection-item">
         <label for="connection-email">Ваш email:</label>
-        <input id="connection-email" type="email" name="user-email" required placeholder="email@example.com">
+        <input class="login-email" id="connection-email" type="email" name="user-email" placeholder="email@example.com">
       </p>
       <p class="connection-item connection-letter">
         <label for="letter-field">Текст письма:</label>
@@ -386,10 +386,10 @@
       </p>
       <button class="button" type="submit">Отправить</button>
     </form>
-    <button class="modal-close" type="button" visually-hidden="Закрыть"></button>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </section>
 
-  <script src="js/popup.js"></script>
+  <script src="js/popup.min.js"></script>
 
 </body>
 
