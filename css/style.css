@@ -907,8 +907,8 @@ a {
   opacity: 1;
 }
 
-.filter-input:focus + label::before {
-  outline: 5px auto -webkit-focus-ring-color;
+.filter-input:focus + label {
+  outline: 2px solid var(--basic-black);
 }
 
 .filter-input-radio:disabled + label,
@@ -977,8 +977,7 @@ a {
 
 .catalog-item:focus-within,
 .catalog-item:focus-within::before {
-  outline: 5px auto -webkit-focus-ring-color;
-  border-collapse: collapse;
+  outline: 2px solid var(--basic-black);
   opacity: 1;
 }
 
@@ -1270,11 +1269,10 @@ a {
 .modal-connection {
   display: none;
   position: fixed;
- right: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   margin: auto;
-  top: calc(50vh - 295px);
-  bottom: auto;
   width: 760px;
   padding: 63px 100px 84px;
   background: var(--basic-white);
@@ -1402,30 +1400,28 @@ a {
   opacity: 0.1;
 }
 
-/* Animations */
-
 @keyframes bounce {
   0% {
-    transform: translateY(-2000px);
+    transform: translate(-50%, -150%);
   }
 
   70% {
-    transform: translateY(30px);
+    transform: translate(-50%, -20%);
   }
 
   90% {
-    transform: translateY(-10px);
+    transform: translate(-50%, -60%);
   }
 
   100% {
-    transform: translateY(0);
+    transform: translate(-50%, -50%);
   }
 }
 
 @keyframes shake {
   0%,
   100% {
-    transform: translateX(0);
+    transform: translate(-50%, -50%);
   }
 
   10%,
@@ -1433,13 +1429,13 @@ a {
   50%,
   70%,
   90% {
-    transform: translateX(-10px);
+    transform: translate(-51%, -50%);
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: translateX(10px);
+    transform: translate(-49%, -50%);
   }
 }
