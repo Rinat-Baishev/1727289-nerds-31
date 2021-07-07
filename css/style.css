@@ -342,7 +342,7 @@ a {
   top: -171px;
   width: 300px;
   height: 146px;
-  background-image: url("../img/laptop.jpg");
+  background-image: url("../img/laptop.png");
   background-color: rgba(215, 55, 59, 0.3);
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -354,7 +354,7 @@ a {
   top: -171px;
   width: 300px;
   height: 146px;
-  background-image: url("../img/iphones.jpg");
+  background-image: url("../img/iphones.png");
   background-position: 0 0;
   background-repeat: no-repeat;
   background-color: rgba(0, 202, 116, 0.3);
@@ -366,7 +366,7 @@ a {
   top: -170px;
   width: 300px;
   height: 146px;
-  background-image: url("../img/smart_screen.jpg");
+  background-image: url("../img/smart_screen.png");
   background-position: 0 0;
   background-repeat: no-repeat;
   background-color: rgba(239, 200, 73, 0.3);
